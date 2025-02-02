@@ -1,0 +1,268 @@
+{% extends 'partial/base.html' %}
+{% load static %}
+{% block content %}
+
+		<!-- Start Hero Section -->
+			<div class="hero">
+				<div class="container">
+					<div class="row justify-content-between">
+						<div class="col-lg-5">
+							<div class="intro-excerpt">
+								<h1>Blog</h1>
+								<p class="mb-4">Check out <a >the Style Guide </a>to
+									help you create a more organized, comfier
+									and happier home. From fresh design
+									aesthetics and colors to furniture types and
+									textures, let the inspo begin!</p>
+								<p><a href="{% static 'assets/images/2024 Home Style Guide & Trends.pdf' %}" target="_blank" class="btn btn-secondary me-2">Check out</a></p>
+							</div>
+						</div>
+						<div class="col-lg-7">
+							<div class="hero-img-wrap">
+								<img src="{% static 'assets/images/blog/blog.jpeg' %}" alt="Image"  class="img-fluid">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!-- End Hero Section -->
+
+		
+
+		<!-- Start Blog Section -->
+		<div class="blog-section">
+			<div class="container">
+				<div class="col-lg-7 mx-auto text-center">
+					<h2 class="section-title" style="padding-top: 0px; padding-bottom: 0px;">Our Realization</h2>
+				</div>
+				<div class="row">
+				<div class="row justify-content-center">
+					
+					<div class="col-lg-12">
+						<div class="testimonial-slider-wrap text-center">
+
+							<div id="testimonial-nav">
+								<span class="prev" data-controls="prev"><span class="fa fa-chevron-left"></span></span>
+								<span class="next" data-controls="next"><span class="fa fa-chevron-right"></span></span>
+							</div>
+
+							<div class="testimonial-slider">
+								
+								<div class="item">
+									<div class="row justify-content-center img-crs">
+												
+											<img src="{% static 'assets/images/blog/IMG_7812.JPG' %}" alt="Maria Jones" class="img-fluid">
+										
+									</div>
+								</div>
+								<!-- END item -->
+
+								<div class="item">
+									<div class="row justify-content-center img-crs">
+											
+											<img src="{% static 'assets/images/blog/IMG_4711.JPG' %}" alt="Maria Jones" class="img-fluid">
+										
+									</div>
+								</div> 
+								<!-- END item -->
+
+								<div class="item">
+									<div class="row justify-content-center img-crs">
+												
+											<img src="{% static 'assets/images/blog/image_67181569.JPG' %}" alt="Maria Jones" class="img-fluid">
+										
+									</div>
+								</div>
+								<!-- END item -->
+								<div class="item">
+									<div class="row justify-content-center img-crs">
+												
+											<img src="{% static 'assets/images/blog/IMG_1386.JPG' %}" alt="Maria Jones" class="img-fluid">
+										
+									</div>
+								</div>
+								<!-- END item -->
+								<div class="item">
+									<div class="row justify-content-center img-crs">
+												
+											<img src="{% static 'assets/images/blog/IMG_4794.JPG' %}" alt="Maria Jones" class="img-fluid">
+										
+									</div>
+								</div>
+								<!-- END item -->
+								<div class="item">
+									<div class="row justify-content-center img-crs">
+												
+											<img src="{% static 'assets/images/blog/IMG_4710.JPG' %}" alt="Maria Jones" class="img-fluid">
+										
+									</div>
+								</div>
+								<!-- END item -->
+								<div class="item">
+									<div class="row justify-content-center img-crs">
+												
+											<img src="{% static 'assets/images/blog/image_67212545.JPG' %}" alt="Maria Jones" class="img-fluid">
+										
+									</div>
+								</div>
+								<!-- END item -->
+								<div class="item">
+									<div class="row justify-content-center img-crs">
+												
+											<img src="{% static 'assets/images/blog/IMG_1389.JPG' %}" alt="Maria Jones" class="img-fluid">
+										
+									</div>
+								</div>
+								<!-- END item -->
+								<div class="item">
+									<div class="row justify-content-center img-crs">
+												
+											<img src="{% static 'assets/images/blog/IMG_4691.JPG' %}" alt="Maria Jones" class="img-fluid">
+										
+									</div>
+								</div>
+								<!-- END item -->
+								<div class="item">
+									<div class="row justify-content-center img-crs">
+												
+											<img src="{% static 'assets/images/blog/IMG_4692.JPG' %}" alt="Maria Jones" class="img-fluid">
+										
+									</div>
+								</div>
+								<!-- END item -->
+								<div class="item">
+									<div class="row justify-content-center img-crs">
+												
+											<img src="{% static 'assets/images/blog/IMG_4693.JPG' %}" alt="Maria Jones" class="img-fluid">
+										
+									</div>
+								</div>
+								<!-- END item -->
+								<div class="item">
+									<div class="row justify-content-center img-crs">
+												
+											<img src="{% static 'assets/images/blog/IMG_7809.JPG' %}" alt="Maria Jones" class="img-fluid">
+										
+									</div>
+								</div>
+								<!-- END item -->
+								<div class="item">
+									<div class="row justify-content-center img-crs">
+												
+											<img src="{% static 'assets/images/blog/IMG_4680.JPG' %}" alt="Maria Jones" class="img-fluid">
+										
+									</div>
+								</div>
+								<!-- END item -->
+							</div>
+
+						</div>
+					</div>
+				<div class="col-lg-7 mx-auto text-center">
+					<h2 class="section-title">Inspirations Styles</h2>
+				</div>
+				<div class="row">
+					
+					<div class="col-12 col-sm-6 col-md-4 mb-5">
+						<div class="post-entry">
+							<a class="post-thumbnail"><img src="{% static 'assets/images/blog/open-concept-modern-living-room.jpeg' %}" alt="Image" class="img-fluid"></a>
+							<div class="post-content-entry">
+								<h3><a >Modern Interior Design Style</a></h3>
+								<div class="meta">
+									<span>Modern interiors decor is kept minimal. They tend to ditch the knick-knacks and use art as the main décor. It’s common to see bold colorful accents in art and furniture in a mostly neutral space.</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 mb-5">
+						<div class="post-entry">
+							<a class="post-thumbnail"><img src="{% static 'assets/images/blog/Traditional-types-of-interior-design-by-Lori-D.jpeg' %}" alt="Image" class="img-fluid"></a>
+							<div class="post-content-entry">
+								<h3><a >Traditional Interior Design Style</a></h3>
+								<div class="meta">
+									<span>Traditional interiors use tables and chairs made from dark wood that is ornately detailed. Traditional design draws its inspiration from 18th & 19th Century England and France. This explains why it’s common to find expensive textiles like silk, velvet, and linen used everywhere from upholstery to window treatments. </span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 mb-5">
+						<div class="post-entry">
+							<a class="post-thumbnail"><img src="{% static 'assets/images/blog/Types-of-interior-design-Eclectic-living-room-Mary-D.jpeg' %}" alt="Image" class="img-fluid"></a>
+							<div class="post-content-entry">
+								<h3><a >Eclectic Interior Design Style</a></h3>
+								<div class="meta">
+									<span>Stick to a neutral color palette and use a select few accent colors to bring in the worldly vibe you’re looking for. With this in mind, the ideal eclectic interior balances color and texture. As a result, it’s the perfect blend of old and new. </span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 mb-5">
+						<div class="post-entry">
+							<a class="post-thumbnail"><img src="{% static 'assets/images/blog/Cozy-contemporary-interior-design-styles-in-a-home-by-Sharene-M.jpeg' %}" alt="Image" class="img-fluid"></a>
+							<div class="post-content-entry">
+								<h3><a >Contemporary Interior Design Style</a></h3>
+								<div class="meta">
+									<span>Contemporary interior design is a sleek and simple space. It uses different features like detailed moldings on walls and windows and open layouts to create an interesting and distinct space. Typical contemporary furniture shows exposed legs and clean lines to give a light and airy feel.  </span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 mb-5">
+						<div class="post-entry">
+							<a class="post-thumbnail"><img src="{% static 'assets/images/blog/Industrial-minimalist-home-decor-styles-by-Darya-N-300x225.jpeg' %}" alt="Image" class="img-fluid"></a>
+							<div class="post-content-entry">
+								<h3><a>Minimalist Interior Design Style</a></h3>
+								<div class="meta">
+									<span>While most minimalist interiors have a neutral color scheme, primary colors can also be used as an accent color. Patterns are nowhere to be found and texture is a necessity. Because of the less is more philosophy you’ll find functional furniture is the most essential design element. Storage is also important in minimalist interior design. For this reason, furniture often doubles as hidden storage. For example, a coffee table that lifts up to reveal storage is one of the many creative solutions minimal interiors use. </span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-md-4 mb-5">
+						<div class="post-entry">
+							<a class="post-thumbnail"><img src="{% static 'assets/images/blog/mid-century-modern-living-room-design-768x516.jpeg' %}" alt="Image" class="img-fluid"></a>
+							<div class="post-content-entry">
+								<h3><a>Mid-Century Modern Interior Design Style</a></h3>
+								<div class="meta">
+									<span>Mid-century modern homes have a breezy and seamless flow. They’ve always encouraged indoor-outdoor living. For this reason, sliding doors and picture windows are left bare to emphasize the connection to nature. Rich and luxurious woods such as teak, rosewood, and walnut are regularly used. In addition, accents of mustard yellow, chartreuse, or avocado are used for a pop of color. The mid-century revival we’re seeing in today’s design industry makes this popular interior design style more achievable than ever. </span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- More post entries here... -->
+
+				</div>
+			</div>
+		</div>
+		<!-- End Blog Section -->	
+
+		
+
+		
+		<style>
+			.hero .hero-img-wrap img{
+				border-radius: 60%;
+				width: 400px;
+    			top: -40px;
+    			left: 30%;
+			}
+			.section-title{
+				padding-bottom: 40px;
+				padding-top: 150px;
+			}
+			
+			.blog-section .img-crs img{
+				width: 50%;
+    			aspect-ratio: 3 / 2;
+    			object-fit: contain;
+
+			}
+		</style>
+
+		<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+		<script src="{% static 'js/tiny-slider.js' %}"></script>
+		<script src="{% static 'js/custom.js' %}"></script>
+	</body>
+
+</html>
+{% endblock content %}

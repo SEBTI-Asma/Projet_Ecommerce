@@ -1,0 +1,136 @@
+{% extends 'partial/base.html' %}
+{% load static %}
+{% block content %}
+
+<!-- Start Hero Section -->
+<div class="hero">
+    <div class="container">
+          
+        <h1>Services</h1>
+        <p class="mb-4">
+            "You're afraid to commit! Don't worry, we understand your concerns. That's why we've assembled a team of dedicated professionals, ready to travel to you for assistance, absolutely free of charge. We understand that each piece is unique, which is why we take your measurements accurately to create custom designs that perfectly match your choices and needs.           
+            Our team utilizes tailored software to ensure that every detail is accounted for. And the best part? This service is completely free. So you don't have to worry about any additional costs. We firmly believe that every customer deserves a personalized and hassle-free experience. So let us show you what we can do to bring your ideas to life."</p>
+        <p><a href="{% url 'store:shop_view' %}" class="btn btn-secondary me-2" >contact us </a></p>
+
+        <!-- Start Testimonial Slider -->
+        
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="testimonial-slider-wrap text-center">
+                            <div id="testimonial-nav">
+                                <span class="prev" data-controls="prev"><span class="fa fa-chevron-left"></span></span>
+                                <span class="next" data-controls="next"><span class="fa fa-chevron-right"></span></span>
+                            </div>
+
+                            <div class="testimonial-slider">
+                                
+                                <div class="item">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-8 mx-auto">
+
+                                            <div class="testimonial-block text-center">
+                                                <blockquote class="mb-5">
+                                                    <img src="{% static 'assets/images/cons1.jpg' %}" class="img-fluid" >
+                                                </blockquote>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div> 
+                        
+                                <div class="item">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-8 mx-auto">
+
+                                            <div class="testimonial-block text-center">
+                                                <blockquote class="mb-5">
+                                                    <img src="{% static 'assets/images/cons2.jpg' %}" class="img-fluid" >
+                                                </blockquote>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>  
+                                <div class="item">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-8 mx-auto">
+
+                                            <div class="testimonial-block text-center">
+                                                <blockquote class="mb-5">
+                                                    <img src="{% static 'assets/images/cons3.png' %}" class="img-fluid" >
+                                                </blockquote>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>  
+                                <div class="item">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-8 mx-auto">
+
+                                            <div class="testimonial-block text-center">
+                                                <blockquote class="mb-5">
+                                                    <img src="{% static 'assets/images/cons4.png' %}" class="img-fluid" >
+                                                </blockquote>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>  
+                                <div class="item">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-8 mx-auto">
+
+                                            <div class="testimonial-block text-center">
+                                                <blockquote class="mb-5">
+                                                    <img src="{% static 'assets/images/cons5.png' %}" class="img-fluid" >
+                                                </blockquote>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>  
+                                <div class="item">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-8 mx-auto">
+
+                                            <div class="testimonial-block text-center">
+                                                <blockquote class="mb-5">
+                                                    <img src="{% static 'assets/images/cons6.png' %}" class="img-fluid" >
+                                                </blockquote>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!-- End Testimonial Slider -->     
+    </div>
+</div>
+<!-- End Hero Section -->
+
+<!-- Start Footer Section -->
+<footer class="footer-section">
+    <!-- Footer content -->
+</footer>
+<!-- End Footer Section --> 
+<style>
+ .mb-5 img{
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: contain;
+ } 
+ 
+</style>
+<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'js/tiny-slider.js' %}"></script>
+<script src="{% static 'js/custom.js' %}"></script>
+</body>
+
+</html>
+{% endblock content %}

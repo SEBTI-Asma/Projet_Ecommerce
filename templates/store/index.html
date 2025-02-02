@@ -1,0 +1,153 @@
+{% extends 'partial/base.html' %}
+{% load static %}
+{% block content %}
+		<!-- Start Hero Section -->
+			<div class="hero">
+				<div class="container">
+					<div class="row justify-content-between">
+						<div class="col-lg-5">
+							<div class="intro-excerpt">
+								<h1>Welcome to<span clsas="d-block"> Univers du Meuble</span></h1>
+								<p class="mb-4">Discover a curated selection of stylish furniture to elevate your interior with both style and comfort on l'Univers du Meuble. From luxurious sofas to modern tables, each piece is carefully chosen to offer quality and elegance. Transform your home into a functional living space today.</p>
+								<p><a href="{% url 'store:shop_view' %}" class="btn btn-secondary me-2">Shop Now</a><a href="#" class="btn btn-white-outline">Explore</a></p>
+							</div>
+						</div>
+						<div class="col-lg-7">
+							<div class="hero-img-wrap">
+								<img src="{% static 'assets/images/couch23.png' %}" class="img-fluid">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!-- End Hero Section -->
+
+		<!-- Start Product Section -->
+		<div class="product-section">
+			<div class="container">
+				<div class="row">
+
+					<!-- Start Column 1 -->
+					<div class="col-md-12 col-lg-3 mb-5 mb-lg-0">
+						<h2 class="mb-4 section-title">Our categories </h2>
+						<p class="mb-4">Explore our wide range of furniture categories including living room, kitchen, and bedroom essentials, each tailored to meet your specific needs. </p>
+						<p><a href="shop.html" class="btn">Explore</a></p>
+					</div> 
+					<!-- End Column 1 -->
+
+					<!-- Start Column 2 -->
+					<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+						<a class="product-item" href="{% url 'store:chambre_view' %}">	
+							<img src="{% static 'assets/images/Chambre.jpeg' %}" class="img-fluid product-thumbnail">
+							<h3 class="product-title">Chambre</h3>
+						</a>
+					</div> 
+					<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+						<a class="product-item" href="{% url 'store:cuisine_view' %}">	
+							<img src="{% static 'assets/images/Cuisine.jpeg' %}" class="img-fluid product-thumbnail">
+							<h3 class="product-title">Cuisine</h3>
+						</a>
+					</div> 
+					<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+						<a class="product-item" href="{% url 'store:salon_view' %}">	
+							<img src="{% static 'assets/images/Salon.jpeg' %}" class="img-fluid product-thumbnail">
+							<h3 class="product-title">Salon</h3>
+						</a>
+					</div> 
+					<!-- End Column 2 -->
+				</div>
+			</div>
+		</div>
+		<!-- End Product Section -->
+
+		<!-- Start Why Choose Us Section -->
+		<div class="why-choose-section">
+			<div class="container">
+				<div class="row justify-content-between">
+					<div class="col-lg-6">
+						<h2 class="section-title">Why Choose Us</h2>
+						<p>Choose us for your furniture needs because we prioritize quality, craftsmanship, and customer satisfaction above all else.</p>
+
+						<div class="row my-5">
+							<div class="col-6 col-md-6">
+								<div class="feature">
+									<div class="icon">
+										<img src="{% static 'assets/images/truck.svg' %}" alt="Image" class="imf-fluid">
+									</div>
+									<h3>Fast &amp; Free Shipping</h3>
+									<p>Enjoy our lightning-fast and complimentary shipping services!.</p>
+								</div>
+							</div>
+
+							<div class="col-6 col-md-6">
+								<div class="feature">
+									<div class="icon">
+										<img src="{% static 'assets/images/bag.svg' %}" alt="Image" class="imf-fluid">
+									</div>
+									<h3>Easy to Shop</h3>
+									<p>Browse effortlessly through our user-friendly interface!.</p>
+								</div>
+							</div>
+
+							<div class="col-6 col-md-6">
+								<div class="feature">
+									<div class="icon">
+										<img src="{% static 'assets/images/support.svg' %}" alt="Image" class="imf-fluid">
+									</div>
+									<h3>24/7 Support</h3>
+									<p>Access our round-the-clock customer support for any queries or concerns!.</p>
+								</div>
+							</div>
+
+							<div class="col-6 col-md-6">
+								<div class="feature">
+									<div class="icon">
+										<img src="{% static 'assets/images/return.svg' %}" alt="Image" class="imf-fluid">
+									</div>
+									<h3>Hassle Free Returns</h3>
+									<p>Experience hassle-free returns with our simple and efficient process!.</p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="col-lg-5">
+						<div class="img-wrap">
+							<img src="{% static 'assets/images/why-choose-us-img.jpg' %}" alt="Image" class="img-fluid">
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- End Why Choose Us Section -->
+
+		<!-- Start We Help Section -->
+		<div class="we-help-section">
+			<div class="container">
+				<div class="row justify-content-between">
+					<div class="col-lg-7 mb-5 mb-lg-0">
+						<div class="imgs-grid">
+							<div class="grid grid-1"><img src="{% static 'assets/images/img-grid-1.jpg' %}" alt="Untree.co"></div>
+							<div class="grid grid-2"><img src="{% static 'assets/images/image2.jpg' %}" alt="Untree.co"></div>
+							<div class="grid grid-3"><img src="{% static 'assets/images/image3.jpg' %}" alt="Untree.co"></div>
+						</div>
+					</div>
+					<div class="col-lg-5 ps-lg-5">
+						<h2 class="section-title mb-4">We Help You Make Modern Interior Design</h2>
+						<p>Let us assist you in creating a modern interior design that reflects your style and personality. With our expertise and guidance, your space will transform into a contemporary oasis that you'll love coming home to. Whether you're looking for sleek minimalism or bold statement pieces, we've got you covered.</p>
+
+						<ul class="list-unstyled custom-list my-4">
+							<li>Our curated collection of furniture and decor items is designed to cater to modern tastes</li>
+							<li>We offer a wide range of styles and colors to choose from, so you can find the perfect fit</li>
+						</ul>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End We Help Section -->
+
+			
+{% endblock content %}

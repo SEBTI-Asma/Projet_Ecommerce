@@ -1,0 +1,165 @@
+{% load static %}
+<!-- /*
+* Bootstrap 5
+* Template Name: Furni
+* Template Author: Untree.co
+* Template URI: https://untree.co/
+* License: https://creativecommons.org/licenses/by/3.0/
+*/ -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Untree.co">
+
+
+  <link rel="shortcut icon" href="{% static 'assets/logoicon.png' %}">
+
+
+  <meta name="description" content="" />
+  <meta name="keywords" content="bootstrap, bootstrap4" />
+
+	<!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" />
+	<link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+	<link href="{% static 'assets/css/bootstrap.min.css' %}" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+	<link href="{% static 'assets/css/tiny-slider.css' %}" rel="stylesheet">
+	<link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="{% static 'assets/css/profile.css' %}" rel="stylesheet" />
+	<title>Univers du Meuble </title>
+
+</head>
+<body>
+
+<!-- Start Header/Navigation -->
+<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark fixed-top" arial-label="Furni navigation bar">
+    <div class="container">
+        <a class="navbar-brand " href="index.html"><img  src="{%static 'assets/images/logo3.png'%}" class="lg-img" alt="Logo du site"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsFurni">
+            <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+				<li class="nav-item {% if request.path == '/' %}active{% endif %}">
+					<a class="nav-link navbar_part1" href="/">Home</a>
+				</li>
+				<li class="nav-item {% if request.path == '/shop/' %}active{% endif %}">
+					<a class="nav-link navbar_part1" href="{% url 'store:shop_view' %}">Shop</a>
+				</li>
+				<li class="nav-item {% if request.path == '/about/' %}active{% endif %}">
+					<a class="nav-link navbar_part1" href="{% url 'store:about_view' %}">About us</a>
+				</li>
+				<li class="nav-item {% if request.path == '/services/' %}active{% endif %}">
+					<a class="nav-link navbar_part1" href="{% url 'store:services_view' %}">Services</a>
+				</li>
+				<li class="nav-item {% if request.path == '/blog/' %}active{% endif %}">
+					<a class="nav-link navbar_part1" href="{% url 'store:blog_view' %}">Blog</a>
+				</li>
+				<li class="nav-item {% if request.path == '/contact/' %}active{% endif %}">
+					<a class="nav-link navbar_part1" href="{% url 'store:contact_view' %}">Contact us</a>
+				</li>
+			</ul>
+            <ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
+                <li><a class="nav-link" href="{% url 'store:cart_vieww' %}"><img src="{% static 'assets/images/cart.svg' %}"></a></li>
+                <div class="action" style="z-index: 1000;">
+
+                    <div onclick="menuToggle();">
+                        <li><a class="nav-link" href="#"><img src="{% static 'assets/images/user.svg' %}"></a></li>
+                    </div>
+                    <div class="menu">
+                        <h3>Someone Famous<br /><span>Website Designer</span></h3>
+                        <ul>
+                            <li><img src="{% static 'assets/images/icons/user.png' %}" /><a href="#" style="color: black !important;">My profile</a></li>
+                            <li><img src="{% static 'assets/images/icons/edit.png' %}" /><a href="#" style="color: black !important;">Edit profile</a></li>
+                            <li><img src="{% static 'assets/images/icons/envelope.png' %}" /><a href="#" style="color: black !important;">Inbox</a></li>
+                            <li><img src="{% static 'assets/images/icons/settings.png' %}" /><a href="#" style="color: black !important;">Setting</a></li>
+                            <li><img src="{% static 'assets/images/icons/question.png' %}" /><a href="#" style="color: black !important;">Help</a></li>
+                            {% if request.user.is_authenticated %}
+                                <li><img src="{% static 'assets/images/icons/log-out.png' %}" /><a href="{% url 'userauths:sign-out' %}" style="color: black !important;">Logout</a></li>
+                            {% else %}
+                                <li><img src="{% static 'assets/images/icons/log-out.png' %}" /><a href="{% url 'userauths:sign-in' %}" style="color: black !important;">Login</a></li>
+                            {% endif %}
+                        </ul>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- End Header/Navigation -->
+
+{% block content %}
+
+{% endblock content %}
+
+<!-- Start Footer Section -->
+<footer class="footer-section">
+    <div class="container relative">
+        <div class="sofa-img">
+            <img src="{% static 'assets/images/sofa2.png' %}" alt="Image" class="img-fluid">
+        </div>
+        <div class="row g-5 mb-5">
+            <div class="col-lg-4">
+                <div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo">L'Univers du Meuble<span>.</span></a></div>
+                <p class="mb-4">Discover a curated selection of stylish furniture to elevate your interior with both style and comfort on Univers du Meuble. From luxurious sofas to modern tables, each piece is carefully chosen to offer quality and elegance. Transform your home into a functional living space today.</p></p>
+                <ul class="list-unstyled custom-social">
+                    <li><a href="https://www.facebook.com/dikeaAlgerie?mibextid=LQQJ4d"><span class="fa fa-brands fa-facebook-f"></span></a></li>
+                    <li><a href="https://www.instagram.com/dikea.alg?igsh=MW1ycmRkdXpuY3J2Zw=="><span class="fa fa-brands fa-instagram"></span></a></li>
+                </ul>
+            </div>
+            <div class="col-lg-8">
+                <div class="row links-wrap">
+                    <div class="col-6 col-sm-6 col-md-3">
+                        <ul class="list-unstyled">
+                            <li><a href="{% url 'store:about_view' %}">About us</a></li>
+                            <li><a href="{% url 'store:services_view' %}">Services</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3">
+                        <ul class="list-unstyled">
+                           
+							<li><a href="{% url 'store:contact_view' %}">Contact us</a></li>
+                            <li><a href="{% url 'store:blog_view' %}">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3">
+                        <ul class="list-unstyled">
+						
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border-top copyright">
+            <div class="row pt-4">
+                <div class="col-lg-6">
+                    <p class="mb-2 text-center text-lg-start">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Designed with love by <a >SII Students </a> 
+                    </p>
+                </div>
+                <div class="col-lg-6 text-center text-lg-end">
+                    <ul class="list-unstyled d-inline-flex ms-auto">
+                        <li class="me-4"><a href="#">Terms &amp; Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer Section -->
+
+<script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'assets/js/tiny-slider.js' %}"></script>
+<script src="{% static 'assets/js/custom.js' %}"></script>
+<script>
+    function menuToggle() {
+        const toggleMenu = document.querySelector(".menu");
+        toggleMenu.classList.toggle("active");
+    }
+</script>
+</body>
+</html>
